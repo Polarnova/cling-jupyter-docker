@@ -1,6 +1,6 @@
-# Cling-Jupyter Docker Image
+# Cling-Jupyter Docker
 
-This repository provides a Docker image for running Jupyter Notebooks with [xeus-cling](https://github.com/jupyter-xeus/xeus-cling).
+This repository provides a Dockerfile for running Jupyter Notebooks with [xeus-cling](https://github.com/jupyter-xeus/xeus-cling).
 
 ## Getting Started
 
