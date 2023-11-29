@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - 'main'
+  schedule:
+      - cron: '12 3 15 1/2 *' # At 03:12 on day-of-month 15 in every 2nd month from January through December.
 
 jobs:
   build:
