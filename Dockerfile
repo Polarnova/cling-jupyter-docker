@@ -22,10 +22,11 @@ RUN /bin/bash -c "source activate $CONDA_ENV_NAME && \
 # Switch back to non-root user
 USER $NB_UID
 
-# Set the default command to start Jupyter Notebook
+#Install the Kernel Spec
 RUN /bin/bash -c "source activate $CONDA_ENV_NAME && \
                 jupyter kernelspec install /opt/conda/envs/cling/share/jupyter/kernels/xcpp11 --sys-prefix && \
                 jupyter kernelspec install /opt/conda/envs/cling/share/jupyter/kernels/xcpp14 --sys-prefix && \
                 jupyter kernelspec install /opt/conda/envs/cling/share/jupyter/kernels/xcpp17 --sys-prefix"
 
+# Set the default command to start Jupyter Notebook
 CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root"]
