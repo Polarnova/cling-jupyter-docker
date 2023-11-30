@@ -5,7 +5,7 @@ on:
     branches:
       - 'main'
   schedule:
-      - cron: '12 3 15 1/2 *' # At 03:12 on day-of-month 15 in every 2nd month from January through December.
+      - cron: '12 3 5 * *' #At 03:12 on day-of-month 5
 
 jobs:
   build:
