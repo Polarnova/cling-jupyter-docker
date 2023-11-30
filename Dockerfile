@@ -20,7 +20,7 @@ RUN /bin/bash -c "source activate $CONDA_ENV_NAME && \
     mamba install xeus-cling -c conda-forge --yes"
 
 # Switch back to non-root user
-USER $NB_UID
+# USER $NB_UID
 
 #Install the Kernel Spec
 RUN /bin/bash -c "source activate $CONDA_ENV_NAME && \
