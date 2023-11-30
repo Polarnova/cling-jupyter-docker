@@ -8,7 +8,7 @@ This repository provides a Dockerfile for running [cling](https://github.com/roo
 
 To pull the Docker image, use the following command:
 ```bash
- docker pull p01arn0va/cling-jupyter
+docker pull p01arn0va/cling-jupyter
 ```
 
 Here is an example of how to run the Docker image:
@@ -18,7 +18,7 @@ docker run -it --rm -p8888:8888 -v $PWD:/home/jovyan/work p01arn0va/cling-jupyte
 
 ### Building the Docker Image
 
-To build the Docker image locally, run the following command in the repository’s root directory:
+To build the Docker image locally, run the following command in the repository's root directory:
 
 ```bash
 docker build -t cling-jupyter .
