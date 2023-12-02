@@ -18,7 +18,7 @@ RUN conda create -n $CONDA_ENV_NAME python=$python_version && \
 
 # Install xeus-cling and its dependencies && Install the Kernel Spec
 RUN /bin/bash -c "source activate $CONDA_ENV_NAME && \
-    mamba install xeus-cling jupyter-lsp-python -c conda-forge --yes && \
+    mamba install xeus-cling -c conda-forge --yes && \
     jupyter kernelspec install /opt/conda/envs/cling/share/jupyter/kernels/xcpp11 --sys-prefix && \
     jupyter kernelspec install /opt/conda/envs/cling/share/jupyter/kernels/xcpp14 --sys-prefix && \
     jupyter kernelspec install /opt/conda/envs/cling/share/jupyter/kernels/xcpp17 --sys-prefix"
